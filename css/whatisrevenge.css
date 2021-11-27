@@ -1,0 +1,81 @@
+.intro {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    text-align: center;
+    color: #fff;
+    background-image: url("../images/1116882.jpg");
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.multilinespesso {
+    line-height: 40px;
+}
+
+
+/* -------------------------------testimonials------------------------------- */
+
+head,
+body {
+    background-color: rgb(198, 219, 219)
+}
+
+.card {
+    background-color: rgba(0, 0, 0, .2);
+    cursor: pointer;
+    margin-left: 70px;
+    text-align: center;
+}
+
+.hd {
+    font-size: 25px;
+    font-weight: 550
+}
+
+.card.hover,
+.card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .2)
+}
+
+.img {
+    top: -40px;
+    margin-bottom: -30px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+.card-title {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+button.focus,
+button:focus {
+    outline: 0;
+    box-shadow: none !important
+}
+
+.ft {
+    margin-top: 25px
+}
+
+.chk {
+    margin-bottom: 5px
+}
+
+.rck {
+    margin-top: 20px;
+    padding-bottom: 15px
+}
+
+.image-cropper {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}

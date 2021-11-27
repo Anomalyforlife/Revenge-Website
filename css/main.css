@@ -1,0 +1,300 @@
+/* -------------------------------------------------------------NAVBAR------------------------------------------------ */
+
+#sitebar {
+    background-color: gray;
+    color: white
+}
+
+#imgTopBar {
+    margin-top: -20px;
+    width: 60px;
+    float: left;
+}
+
+#buttonstop {
+    color: rgb(209, 209, 209);
+    transition: .2s;
+}
+
+#buttonstop:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+.navbar-default {
+    background-color: gray;
+    border-color: black;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.navbar-default .navbar-header .navbar-brand {
+    color: yellowgreen;
+}
+
+.navbar-default .navbar-header .navbar-brand:hover,
+.navbar-default .navbar-header .navbar-brand:focus {
+    color: #eb3812;
+}
+
+.navbar-default .nav>li>a,
+.navbar-default .nav>li>a:focus {
+    color: #222;
+}
+
+.navbar-default .nav>li>a:hover,
+.navbar-default .nav>li>a:focus:hover {
+    color: yellowgreen;
+}
+
+.navbar-default .nav>li.active>a,
+.navbar-default .nav>li.active>a:focus {
+    color: yellowgreen!important;
+    background-color: transparent;
+}
+
+.navbar-default .nav>li.active>a:hover,
+.navbar-default .nav>li.active>a:focus:hover {
+    background-color: transparent;
+}
+
+@media(min-width:768px) {
+    .navbar-default {
+        border-color: rgba(255, 255, 255, .3);
+        background-color: transparent;
+    }
+    .navbar-default .navbar-header .navbar-brand {
+        color: rgb(209, 209, 209);
+        letter-spacing: 0.5em;
+    }
+    .navbar-default .navbar-header .navbar-brand:hover,
+    .navbar-default .navbar-header .navbar-brand:focus {
+        color: rgb(255, 255, 255);
+    }
+    .navbar-default .nav>li>a,
+    .navbar-default .nav>li>a:focus {
+        color: rgb(209, 209, 209);
+    }
+    .navbar-default .nav>li>a:hover,
+    .navbar-default .nav>li>a:focus:hover {
+        color: orange;
+    }
+    .navbar-default .nav>li.active>a,
+    .navbar-default .nav>li.active>a:focus {
+        color: orange!important;
+        background-color: transparent;
+    }
+    .navbar-default.affix {
+        border-color: #fff;
+        background-color: #fff;
+        box-shadow: 0px 7px 20px 0px rgba(0, 0, 0, 0.1);
+    }
+    .navbar-default.affix .navbar-header .navbar-brand {
+        letter-spacing: 0;
+        color: orangered;
+    }
+    .navbar-default.affix .navbar-header .navbar-brand:hover,
+    .navbar-default.affix .navbar-header .navbar-brand:focus {
+        color: #eb3812;
+    }
+    .navbar-default.affix .nav>li>a,
+    .navbar-default.affix .nav>li>a:focus {
+        color: white;
+    }
+    .navbar-default.affix .nav>li>a:hover,
+    .navbar-default.affix .nav>li>a:focus:hover {
+        color: #fff;
+    }
+}
+
+
+/* dropdown button */
+
+.textInDropdown:hover {
+    transform: scale(1.08);
+}
+
+@keyframes showDropdown {
+    0% {
+        opacity: 0;
+        color: rgba(209, 209, 209, 0);
+    }
+    20% {
+        opacity: 0.2;
+        color: rgba(209, 209, 209, 0.2);
+    }
+    40% {
+        opacity: 0.4;
+        color: rgba(209, 209, 209, 0.4);
+    }
+    60% {
+        opacity: 0.6;
+        color: rgba(209, 209, 209, 0.6);
+    }
+    80% {
+        opacity: 0.8;
+        color: rgba(209, 209, 209, 0.8);
+    }
+    100% {
+        opacity: 1;
+        color: rgba(209, 209, 209, 1);
+    }
+}
+
+.dropdown-content .buttonInDropdown:nth-child(2) {
+    animation-delay: 90ms
+}
+
+.dropdown-content .buttonInDropdown:nth-child(3) {
+    animation-delay: 180ms
+}
+
+.dropdown-content .buttonInDropdown:nth-child(4) {
+    animation-delay: 270ms
+}
+
+.dropdown-content .buttonInDropdown {
+    opacity: 0;
+    animation: showDropdown 100ms forwards;
+    background-color: rgb(65, 65, 65);
+}
+
+.dropbtn {
+    font-family: sans-serif;
+    font-size: 10px;
+    background-color: transparent;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    color: gray;
+}
+
+.dropdown-content {
+    margin-top: 1px;
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: transparent;
+    min-width: 160px;
+    z-index: 1;
+    transition: 0.2s;
+}
+
+.dropdown-content a {
+    color: rgb(209, 209, 209);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    display: block;
+    color: white;
+}
+
+
+/* ----------------------------------------------------FLOATING BUTTON---------------------------------------------------------- */
+
+.flBtnCntr {
+    display: inline-flex;
+    position: fixed;
+    bottom: 3%;
+    left: 2%;
+}
+
+.flBtnBox {
+    outline: 0;
+    border: 0;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.flBtnBox.big:hover {
+    background-color: orangered;
+    transform: rotate(45deg);
+}
+
+.flBtnBox.big {
+    background-color: orange;
+    font-size: 30px;
+    height: 60px;
+    width: 60px
+}
+
+.flBtnBox.small {
+    animation: showBtn 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    transform: scale(0);
+    background-color: #363636;
+    margin: 0 5px;
+    font-size: 30px;
+    height: 40px;
+    width: 40px;
+    line-height: 1px;
+}
+
+.flBtnBox.small:nth-child(2) {
+    animation-delay: 100ms
+}
+
+.flBtnBox.small:nth-child(3) {
+    animation-delay: 200ms
+}
+
+@keyframes showBtn {
+    0% {
+        transform: scale(0)
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+
+.flBtnBox.big:hover {
+    box-shadow: 0 0 10px rgba(41, 120, 211, 0.4)
+}
+
+.flBtnBox.small:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+}
+
+.flBtns {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+    display: none;
+    padding: 0 5px;
+    align-items: center
+}
+
+.flBtnCntr:hover .flBtns {
+    display: inline-flex
+}
+
+.image-round {
+    border-radius: 30%;
+}
+
+#shopTebex {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.boxshadowBL {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .2)
+}
