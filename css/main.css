@@ -120,22 +120,6 @@
         opacity: 0;
         color: rgba(209, 209, 209, 0);
     }
-    20% {
-        opacity: 0.2;
-        color: rgba(209, 209, 209, 0.2);
-    }
-    40% {
-        opacity: 0.4;
-        color: rgba(209, 209, 209, 0.4);
-    }
-    60% {
-        opacity: 0.6;
-        color: rgba(209, 209, 209, 0.6);
-    }
-    80% {
-        opacity: 0.8;
-        color: rgba(209, 209, 209, 0.8);
-    }
     100% {
         opacity: 1;
         color: rgba(209, 209, 209, 1);
@@ -223,7 +207,7 @@
 
 .flBtnBox.big:hover {
     background-color: orangered;
-    transform: rotate(45deg);
+    transform: rotate(135deg);
 }
 
 .flBtnBox.big {
@@ -262,11 +246,11 @@
 }
 
 .flBtnBox.big:hover {
-    box-shadow: 0 0 10px rgba(41, 120, 211, 0.4)
+    box-shadow: 0 0 10px rgba(41, 120, 211, 0.4);
 }
 
 .flBtnBox.small:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .flBtns {
@@ -282,6 +266,9 @@
 .flBtnCntr:hover .flBtns {
     display: inline-flex
 }
+
+
+/* -----------------------------------------------------------UTILS------------------------------------------------------------ */
 
 .image-round {
     border-radius: 30%;

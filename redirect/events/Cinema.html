@@ -34,7 +34,6 @@
     <script type="text/javascript" src="../../js/bootstrap.js"></script>
     <script type="text/javascript" src="../../js/cinema.js" defer></script>
     <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../../js/custom.js"></script>
     <script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="../../js/jquery.easing.min.js"></script>
     <script type="text/javascript" src="../../js/ie10-viewport-bug-workaround.js"></script>
@@ -43,7 +42,7 @@
 
 <body>
 
-    <!-- ------------------------------------------Start Events NavBar------------------------------------------ -->
+    <!-- ------------------------------------------Start Redir NavBar------------------------------------------ -->
 
     <!-- Navigation -->
     <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color: rgb(65, 65, 65);">
@@ -63,21 +62,20 @@
                     <li>
                         <a id=buttonstop href="../../index.html">Home</a>
                     </li>
-                    <li>
-                        <a id=buttonstop href="../events/Eventi.html">Eventi
-                        </a>
-                    </li>
                     <li class="dropdown">
-                        <a id=buttonstop href="../../index.html">Chi siamo</a>
+                        <a id=buttonstop href="../../redirect/events/Eventi.html">Eventi</a>
                         <div class="dropdown-content">
-                            <a href="../events/Eventi.html">Calendario</a>
-                            <a href="../events/Discord.html">Discord</a>
-                            <a href="../events/Cinema.html">Cinema</a>
-                            <a href="../events/Minecraft.html">Minecraft</a>
+                            <div class="buttonInDropdown"><a class="textInDropdown" href="../../redirect/events/Eventi.html">Calendario</a></div>
+                            <div class="buttonInDropdown"><a class="textInDropdown" href="../../redirect/Discord.html">Discord</a></div>
+                            <!-- <div class="buttonInDropdown"><a class="textInDropdown" href="../../redirect/events/Minecraft.html">Minecraft</a></div> -->
+                            <div class="buttonInDropdown"><a class="textInDropdown" href="../../redirect/events/Cinema.html">Cinema</a></div>
                         </div>
                     </li>
                     <li>
-                        <a id=buttonstop href="#">Contattaci</a>
+                        <a id=buttonstop href="../../redirect/shop.html">Shop</a>
+                    </li>
+                    <li>
+                        <a id=buttonstop href="https://statbot.net/dashboard/697475324040052916/overview">Statistiche</a>
                     </li>
                 </ul>
 
@@ -86,7 +84,7 @@
         </div>
         <!-- /.container -->
     </nav>
-    <!-- ------------------------------------------End Events NavBar------------------------------------------ -->
+    <!-- ------------------------------------------End Redir NavBar------------------------------------------ -->
 
     <!-- Content 2 -->
     <header>
@@ -154,13 +152,13 @@
         <button class="flBtnBox big ">+</button>
         <div class="flBtns ">
             <button class="flBtnBox small " onclick="window.location.href='https://discord.gg/32hJc9hFsf' ">
-                    <span class="iconify " data-icon="la:discord "></span>
+                    <span class="iconify " data-icon="la:discord"></span>
                 </button>
             <button class="flBtnBox small " onclick="window.location.href='https://www.instagram.com/revenge.ita/' ">
-                    <span class="iconify " data-icon="mdi:instagram "></span>
+                    <span class="iconify " data-icon="mdi:instagram"></span>
                 </button>
             <button class="flBtnBox small " onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' ">
-                    <span class="iconify " data-icon="ant-design:youtube-outlined "></span>
+                    <span class="iconify " data-icon="ant-design:youtube-outlined"></span>
                 </button>
         </div>
     </div>
